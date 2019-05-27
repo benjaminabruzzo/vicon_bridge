@@ -16,7 +16,7 @@ int main(int argc, char** argv)
   }
 
   ros::ServiceClient client = nh.serviceClient<vicon_bridge::viconCalibrateSegment> ("vicon/calibrate_segment");
-
+//test
   vicon_bridge::viconCalibrateSegment::Request req;
   vicon_bridge::viconCalibrateSegment::Response resp;
 
