@@ -1,3 +1,6 @@
+USAGE for experiments:
+- roslaunch vicon_bridge vicon_bridge.launch date:=20190722 trial:=001
+
 This is a driver providing data from VICON motion capture systems. It is based on the vicon_mocap package from the starmac stacks. 
 Additionally, it can handle multiple subjects / segments and allows to calibrate an origin of the vehicle(s) as this is somehow tedious with the VICON Tracker.
 
