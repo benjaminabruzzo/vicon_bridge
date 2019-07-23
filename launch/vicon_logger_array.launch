@@ -1,0 +1,16 @@
+<launch>
+	<arg name="date" 			default="20190722" />
+	<arg name="trial" 		default="001" />
+	<arg name="origin" 		default="/vicon" />
+	<arg name="objects"		default="mkiii,mkiv" /> <!-- no spaces! -->
+
+	<arg name="launcher"	default="vicon_array_logger_launch_$(env HOST)" />
+
+	<node pkg="vicon_bridge" type="vicon_logger_array.py" name="vicon_array_logger_$(env HOST)" output="screen" >
+		<param name="/trial"		value="$(arg trial)" />
+		<param name="/date"			value="$(arg date)" />
+		<param name="/origin"		value="$(arg origin)" />
+		<param name="/objects"	value="$(arg objects)" /> <!-- no spaces! -->
+	</node>
+
+</launch>

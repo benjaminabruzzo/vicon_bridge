@@ -1,0 +1,17 @@
+<launch>
+	<arg name="object" 		default="mkiii" />
+	<arg name="origin" 		default="/vicon" />
+
+	<arg name="trial" 		default="001" />
+	<arg name="date" 			default="20190722" />
+	
+	<arg name="launcher"	default="$(arg object)_logger_launch" />  
+
+	<node pkg="vicon_bridge" type="vicon_logger.py" name="$(arg object)_logger" output="screen" >
+		<param name="/trial"	value="$(arg trial)" />
+		<param name="/date"		value="$(arg date)" />
+		<param name="/origin"	value="$(arg origin)" />
+		<param name="/object"	value="$(arg object)" />
+	</node>
+
+</launch>
