@@ -8,7 +8,7 @@
 
   git add --all .
   git commit -m "$2"
-  git push "$1" hastSLAM
+  git push "$1" master
 
 
 # This will detach your HEAD, that is, leave you with no branch checked out:
