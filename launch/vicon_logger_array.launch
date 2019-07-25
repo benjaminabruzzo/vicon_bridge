@@ -1,5 +1,5 @@
 <launch>
-	<arg name="date" 			default="20190722" />
+	<arg name="date" 			default="20190725" />
 	<arg name="trial" 		default="001" />
 	<arg name="origin" 		default="/vicon" />
 	<arg name="objects"		default="mkiii,mkiv" /> <!-- no spaces! -->
