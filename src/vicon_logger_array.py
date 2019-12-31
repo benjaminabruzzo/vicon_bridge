@@ -12,7 +12,7 @@ class logger():
 		exp_trial = rospy.get_param('~trial')
 		str_trial = str(exp_trial).zfill(3)
 
-		logger_filename = ('/home/benjamin/ros/data/{0}/{1}/vicon_array_logger_{1}.m').format(str_date,str_trial)
+		logger_filename = ('/home/benjamin/ros/data/{0}/{1}/vicon_{1}.m').format(str_date,str_trial)
 		print("vicon_logger :: logger_filename : {}").format(logger_filename)
 		file_logger = open(logger_filename, 'w')
 		file_logger.write("%% {}\n".format(logger_filename))
